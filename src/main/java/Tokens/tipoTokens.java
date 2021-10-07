@@ -1,7 +1,7 @@
 
-package elementos;
+package Tokens;
 
-public enum TipoToken {
+public enum tipoTokens {
 
     IDENTIFICADOR(1), 
     NUMERO(2), 
@@ -12,7 +12,7 @@ public enum TipoToken {
 
     private int estadoAceptacion; // Estado de Aceptación
 
-    private TipoToken(int estadoAceptacion) {
+    private tipoTokens(int estadoAceptacion) {
         this.estadoAceptacion = estadoAceptacion;
     }
 

@@ -1,0 +1,14 @@
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/frontend/PanelErrores.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/elementos/Token.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/main/Principal.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/elementos/Automata.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/frontend/VistaAnalizador.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/elementos/ErrorLexico.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/elementos/TipoToken.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/funcionalidad/Automata.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/funcionalidad/Busqueda.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/archivos/ManejoArchivos.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/elementos/Lexema.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/funcionalidad/Analizador.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/frontend/PanelBusquedaResultados.java
+/home/blue/NetBeansProjects/AnalizadorLexico-main/src/main/java/frontend/PanelTokens.java

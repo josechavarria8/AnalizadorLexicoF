@@ -1,5 +1,5 @@
 
-package elementos;
+package Tokens;
 
 public class Automata {
     

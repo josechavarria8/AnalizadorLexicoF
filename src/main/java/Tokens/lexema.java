@@ -1,27 +1,27 @@
-package elementos;
+package Tokens;
 
-import funcionalidad.Busqueda;
+import Analizador.busqueda;
 import java.util.ArrayList;
 
 /**
  *
  * @author CIROSS
  */
-public class Lexema {
+public class lexema {
 
     private String cadena;
-    private TipoToken tipoToken;
+    private tipoTokens tipoToken;
     private int repeticiones;
-    private ArrayList<Token> listaTokens;
-    private ArrayList<Lexema> listaLexemas;
+    private ArrayList<token> listaTokens;
+    private ArrayList<lexema> listaLexemas;
 
-    public Lexema(ArrayList<Token> listaTokens) {
+    public lexema(ArrayList<token> listaTokens) {
         this.listaTokens = listaTokens;
         listaLexemas = new ArrayList<>();
         crearArrayListLexemas();
     }
 
-    private Lexema(String cadena, TipoToken token) {
+    private lexema(String cadena, tipoTokens token) {
         this.cadena = cadena;
         this.tipoToken = token;
         this.repeticiones = 0;
@@ -47,7 +47,7 @@ public class Lexema {
             int contador = 0;
             for (int j = 0; j < listaLexemas.size(); j++) {
 
-                if (Busqueda.iguales(listaTokens.get(i).getLexema(), listaLexemas.get(j).getCadena())) {
+                if (busqueda.iguales(listaTokens.get(i).getLexema(), listaLexemas.get(j).getCadena())) {
                     listaLexemas.get(j).aumentarRepeticiones();
                     break;
                 } else {
@@ -65,17 +65,17 @@ public class Lexema {
 
     
 
-    private void agregarLexema(Token token) {
+    private void agregarLexema(token token) {
         String lexema = token.getLexema();
-        TipoToken tipoTk = token.getTipoToken();
-        listaLexemas.add(new Lexema(lexema, tipoTk));
+        tipoTokens tipoTk = token.getTipoToken();
+        listaLexemas.add(new lexema(lexema, tipoTk));
     }
 
-    public ArrayList<Lexema> getListaLexemas() {
+    public ArrayList<lexema> getListaLexemas() {
         return listaLexemas;
     }
 
-    public void setListaLexemas(ArrayList<Lexema> listaLexemas) {
+    public void setListaLexemas(ArrayList<lexema> listaLexemas) {
         this.listaLexemas = listaLexemas;
     }
     
@@ -87,11 +87,11 @@ public class Lexema {
         this.cadena = cadena;
     }
 
-    public TipoToken getToken() {
+    public tipoTokens getToken() {
         return tipoToken;
     }
 
-    public void setToken(TipoToken token) {
+    public void setToken(tipoTokens token) {
         this.tipoToken = token;
     }
 

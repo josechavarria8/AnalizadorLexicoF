@@ -1,17 +1,17 @@
-package elementos;
+package Tokens;
 
-public class Token {
+public class token {
 
     private String lexema;
-    private TipoToken tipoToken;
+    private tipoTokens tipoToken;
     private int fila, columna;
 
-    public Token(String lexema, TipoToken tipoToken) {
+    public token(String lexema, tipoTokens tipoToken) {
         this.setLexema(lexema);
         this.tipoToken = tipoToken;
     }
 
-    public Token(String lexema, TipoToken tipoToken, int fila, int columna) {
+    public token(String lexema, tipoTokens tipoToken, int fila, int columna) {
         this.setLexema(lexema);
         this.setTipoToken(tipoToken);
         this.setFila(fila);
@@ -37,11 +37,11 @@ public class Token {
         this.lexema = lexema;
     }
 
-    public TipoToken getTipoToken() {
+    public tipoTokens getTipoToken() {
         return tipoToken;
     }
 
-    public void setTipoToken(TipoToken tipoToken) {
+    public void setTipoToken(tipoTokens tipoToken) {
         this.tipoToken = tipoToken;
     }
 

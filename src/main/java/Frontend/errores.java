@@ -3,25 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package frontend;
+package Frontend;
 
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
-import elementos.ErrorLexico;
+import Tokens.errorLexico;
 
 /**
  *
  * @author CIROSS
  */
-public class PanelErrores extends javax.swing.JPanel {
+public class errores extends javax.swing.JPanel {
 
-    private ArrayList<ErrorLexico> listaErrores;
+    private ArrayList<errorLexico> listaErrores;
     DefaultTableModel modeloTablaError = new DefaultTableModel();
     
     /**
      * Creates new form PanelError
      */
-    public PanelErrores(ArrayList<ErrorLexico> listaErrores) {
+    public errores(ArrayList<errorLexico> listaErrores) {
         
         initComponents();
         inicializarTabla();

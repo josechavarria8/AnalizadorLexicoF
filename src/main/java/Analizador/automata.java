@@ -1,7 +1,7 @@
 
-package funcionalidad;
+package Analizador;
 
-public class Automata {
+public class automata {
     
     public static int nuevoEstado(char ch, int estadoActual) {
 

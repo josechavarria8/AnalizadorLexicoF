@@ -1,13 +1,15 @@
 
-package funcionalidad;
+package Analizador;
 
+import Tokens.tipoTokens;
+import Tokens.errorLexico;
+import Tokens.token;
 import java.util.ArrayList;
-import elementos.*;
 
-public class Analizador {
+public class analizador {
     
-    private ArrayList<Token> listaTokens = new ArrayList<Token>();
-    private ArrayList<ErrorLexico> listaErrores = new ArrayList<ErrorLexico>();
+    private ArrayList<token> listaTokens = new ArrayList<token>();
+    private ArrayList<errorLexico> listaErrores = new ArrayList<errorLexico>();
     private static String transiciones;
 
     public void Analizar(String texto) {
@@ -22,19 +24,19 @@ public class Analizador {
 
             if ((texto.charAt(i) != ' ') && (texto.charAt(i) != '\n')) {
                 this.addTransicion("  S" + estadoActual + "  ->");
-                estadoActual = Automata.nuevoEstado(texto.charAt(i), estadoActual);
+                estadoActual = automata.nuevoEstado(texto.charAt(i), estadoActual);
                 cadena += texto.charAt(i);
                 this.addTransicion("  " + texto.charAt(i) + "  ->  S" + estadoActual + "\n");
 
                 if (estadoActual == -1) {
                     System.out.println(cadena + " -> Error lexico");
-                    ErrorLexico erl = new ErrorLexico(cadena, 0, 0);
+                    errorLexico erl = new errorLexico(cadena, 0, 0);
                     listaErrores.add(erl);
                     estadoActual = 0;
                     cadena = "";
                 } else if (estadoActual == -5) {
                     System.out.println(cadena + " -> Error: No se reconoce el simbolo (" + texto.charAt(i) + ")");
-                    listaErrores.add(new ErrorLexico(cadena, 0, 0));
+                    listaErrores.add(new errorLexico(cadena, 0, 0));
                     estadoActual = 0;
                     cadena = "";
                 }
@@ -43,9 +45,9 @@ public class Analizador {
 
                 if (!cadena.isEmpty()) {
 
-                    for (TipoToken tk : TipoToken.values()) {
+                    for (tipoTokens tk : tipoTokens.values()) {
                         if (tk.getEstadoAcept() == estadoActual) {
-                            Token nuevoToken = new Token(cadena, tk, 0, 0);
+                            token nuevoToken = new token(cadena, tk, 0, 0);
                             listaTokens.add(nuevoToken);
 
                             this.addTransicion("  Token: " + nuevoToken.getTipoToken().name() + ",   Lexema: " 
@@ -70,19 +72,19 @@ public class Analizador {
         return transiciones;
     }
     
-    public ArrayList<Token> getListaTokens() {
+    public ArrayList<token> getListaTokens() {
         return listaTokens;
     }
 
-    public void setListaTokens(ArrayList<Token> listaTokens) {
+    public void setListaTokens(ArrayList<token> listaTokens) {
         this.listaTokens = listaTokens;
     }
 
-    public ArrayList<ErrorLexico> getListaErrores() {
+    public ArrayList<errorLexico> getListaErrores() {
         return listaErrores;
     }
 
-    public void setListaErrores(ArrayList<ErrorLexico> listaErrores) {
+    public void setListaErrores(ArrayList<errorLexico> listaErrores) {
         this.listaErrores = listaErrores;
     }
 

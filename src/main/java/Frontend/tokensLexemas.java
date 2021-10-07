@@ -3,34 +3,35 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package frontend;
+package Frontend;
 
-import funcionalidad.Analizador;
+import Tokens.lexema;
+import Tokens.token;
+import Analizador.analizador;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
-import elementos.*;
 
 /**
  *
  * @author CIROSS
  */
-public class PanelTokens extends javax.swing.JPanel {
+public class tokensLexemas extends javax.swing.JPanel {
 
-    private ArrayList<Token> listaTokens;
-    private ArrayList<Lexema> listaLexemas;
-    Analizador al = new Analizador();
-    Lexema lexema;
+    private ArrayList<token> listaTokens;
+    private ArrayList<lexema> listaLexemas;
+    analizador al = new analizador();
+    lexema lexema;
     
     DefaultTableModel modeloTablaToken = new DefaultTableModel();
     DefaultTableModel modeloTablaLexema = new DefaultTableModel();
     
-    public PanelTokens(ArrayList<Token> listaTokens) {
+    public tokensLexemas(ArrayList<token> listaTokens) {
         initComponents();
         inicializarTablas();
         this.listaTokens = listaTokens;
         llenarTablaTokens();
         
-        this.lexema = new Lexema(this.listaTokens);
+        this.lexema = new lexema(this.listaTokens);
         this.listaLexemas = lexema.getListaLexemas();
         llenarTablaLexemas();
         

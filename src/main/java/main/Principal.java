@@ -1,12 +1,12 @@
 
-package main;
+package Main;
 
-import frontend.VistaAnalizador;
+import Frontend.inicioAnalizador;
 
 public class Principal {
     
     public static void main(String[] args) {
-        VistaAnalizador al = new VistaAnalizador();
+        inicioAnalizador al = new inicioAnalizador();
         al.setVisible(true);
     }
 }

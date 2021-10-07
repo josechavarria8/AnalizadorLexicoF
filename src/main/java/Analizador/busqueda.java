@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package funcionalidad;
+package Analizador;
 
 import java.awt.Color;
 import java.util.logging.Level;
@@ -15,7 +15,7 @@ import javax.swing.text.*;
  *
  * @author CIROSS
  */
-public class Busqueda {
+public class busqueda {
 
     public static void buscar(JTextArea jTextArea, String palabraBuscar) {
 

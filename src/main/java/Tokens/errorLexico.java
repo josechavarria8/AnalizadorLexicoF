@@ -1,16 +1,16 @@
 
-package elementos;
+package Tokens;
 
-public class ErrorLexico {
+public class errorLexico {
 
     private String cadena;
     private int fila, columna;
 
-    public ErrorLexico(String cadena) {
+    public errorLexico(String cadena) {
         this.setCadena(cadena);
     }
 
-    public ErrorLexico(String cadena, int fila, int columna) {
+    public errorLexico(String cadena, int fila, int columna) {
         this.setCadena(cadena);
         this.setFila(fila);
         this.setColumna(columna);

@@ -1,5 +1,5 @@
 
-package frontend;
+package Frontend;
 
 import javax.swing.JTextArea;
 
@@ -7,10 +7,10 @@ import javax.swing.JTextArea;
  *
  * @author CIROSS
  */
-public class PanelBusquedaResultados extends javax.swing.JPanel {
+public class resultadoBusqueda extends javax.swing.JPanel {
 
     
-    public PanelBusquedaResultados() {
+    public resultadoBusqueda() {
         
         initComponents();       
     }
