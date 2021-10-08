@@ -11,7 +11,7 @@ import Tokens.errorLexico;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class errores extends javax.swing.JPanel {
 

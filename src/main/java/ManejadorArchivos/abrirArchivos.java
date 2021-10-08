@@ -11,7 +11,7 @@ import javax.swing.*;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class abrirArchivos {
 

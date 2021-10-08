@@ -5,7 +5,7 @@ import javax.swing.JTextArea;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class resultadoBusqueda extends javax.swing.JPanel {
 

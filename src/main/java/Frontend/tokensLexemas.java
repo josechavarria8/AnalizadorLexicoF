@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class tokensLexemas extends javax.swing.JPanel {
 

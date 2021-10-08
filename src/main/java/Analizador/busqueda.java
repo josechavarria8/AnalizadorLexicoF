@@ -13,7 +13,7 @@ import javax.swing.text.*;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class busqueda {
 

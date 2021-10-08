@@ -22,7 +22,7 @@ import Tokens.errorLexico;
 import Tokens.token;
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class inicioAnalizador extends javax.swing.JFrame {
 

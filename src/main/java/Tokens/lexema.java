@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author CIROSS
+ * @author blue
  */
 public class lexema {
 
