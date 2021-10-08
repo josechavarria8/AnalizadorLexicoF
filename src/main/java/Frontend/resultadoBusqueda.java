@@ -31,8 +31,8 @@ public class resultadoBusqueda extends javax.swing.JPanel {
         setOpaque(false);
 
         jLblTitulo.setFont(new java.awt.Font("Corbel Light", 1, 16)); // NOI18N
-        jLblTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLblTitulo.setText("Resultados de Búsqueda");
+        jLblTitulo.setForeground(new java.awt.Color(20, 10, 10));
+        jLblTitulo.setText("Búsqueda");
         jLblTitulo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         jTextAreaBusqueda.setColumns(20);
@@ -48,9 +48,12 @@ public class resultadoBusqueda extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, 369, Short.MAX_VALUE)
+                        .addGap(101, 101, 101))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -26,20 +26,20 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanelGeneral" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanelfondo" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanelGeneral" min="-2" pref="1005" max="-2" attributes="0"/>
+              <Component id="jPanelfondo" min="-2" pref="1005" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="1804" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanelGeneral">
+    <Container class="javax.swing.JPanel" name="jPanelfondo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="db" green="c9" red="8e" type="rgb"/>
@@ -48,7 +48,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanelCentral">
+        <Container class="javax.swing.JPanel" name="jPanelB">
           <Properties>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -78,7 +78,7 @@
                           <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                           <Component id="jScrollPane" min="-2" pref="323" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                          <Component id="jPanelResultados" pref="485" max="32767" attributes="0"/>
+                          <Component id="jPanelInfo" pref="485" max="32767" attributes="0"/>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -89,7 +89,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jPanelResultados" min="-2" pref="786" max="-2" attributes="0"/>
+                                  <Component id="jPanelInfo" min="-2" pref="786" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -134,7 +134,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanelResultados">
+                <Container class="javax.swing.JPanel" name="jPanelInfo">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
@@ -152,7 +152,7 @@
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanelSuperior">
+        <Container class="javax.swing.JPanel" name="jPanelA">
           <Properties>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -167,19 +167,19 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jPanelHeader" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanelarriba" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="27" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanelHeader" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jPanelarriba" alignment="1" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="jPanelHeader">
+            <Container class="javax.swing.JPanel" name="jPanelarriba">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="c9" green="62" red="4d" type="rgb"/>

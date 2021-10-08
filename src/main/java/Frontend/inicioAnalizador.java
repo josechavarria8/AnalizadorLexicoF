@@ -52,14 +52,14 @@ public class inicioAnalizador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanelGeneral = new javax.swing.JPanel();
-        jPanelCentral = new javax.swing.JPanel();
+        jPanelfondo = new javax.swing.JPanel();
+        jPanelB = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane = new javax.swing.JScrollPane();
         jTextAreaEdicion = new javax.swing.JTextArea();
-        jPanelResultados = new javax.swing.JPanel();
-        jPanelSuperior = new javax.swing.JPanel();
-        jPanelHeader = new javax.swing.JPanel();
+        jPanelInfo = new javax.swing.JPanel();
+        jPanelA = new javax.swing.JPanel();
+        jPanelarriba = new javax.swing.JPanel();
         jPanelBotones = new javax.swing.JPanel();
         jPanelBuscar = new javax.swing.JPanel();
         jTextFieldBuscar = new javax.swing.JTextField();
@@ -71,11 +71,11 @@ public class inicioAnalizador extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
 
-        jPanelGeneral.setBackground(new java.awt.Color(142, 201, 219));
-        jPanelGeneral.setLayout(new java.awt.BorderLayout());
+        jPanelfondo.setBackground(new java.awt.Color(142, 201, 219));
+        jPanelfondo.setLayout(new java.awt.BorderLayout());
 
-        jPanelCentral.setOpaque(false);
-        jPanelCentral.setLayout(new java.awt.GridLayout(1, 0));
+        jPanelB.setOpaque(false);
+        jPanelB.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel5.setForeground(new java.awt.Color(42, 56, 204));
         jPanel5.setOpaque(false);
@@ -94,8 +94,8 @@ public class inicioAnalizador extends javax.swing.JFrame {
         });
         jScrollPane.setViewportView(jTextAreaEdicion);
 
-        jPanelResultados.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jPanelResultados.setLayout(new java.awt.GridLayout(1, 0));
+        jPanelInfo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanelInfo.setLayout(new java.awt.GridLayout(1, 0));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -105,7 +105,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 .addGap(69, 69, 69)
                 .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81)
-                .addComponent(jPanelResultados, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
+                .addComponent(jPanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -114,28 +114,28 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addComponent(jPanelResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(179, 179, 179))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(216, 216, 216))))
         );
 
-        jPanelCentral.add(jPanel5);
+        jPanelB.add(jPanel5);
 
-        jPanelGeneral.add(jPanelCentral, java.awt.BorderLayout.CENTER);
+        jPanelfondo.add(jPanelB, java.awt.BorderLayout.CENTER);
 
-        jPanelSuperior.setOpaque(false);
+        jPanelA.setOpaque(false);
 
-        jPanelHeader.setBackground(new java.awt.Color(77, 98, 201));
-        jPanelHeader.setForeground(new java.awt.Color(85, 128, 201));
-        jPanelHeader.setOpaque(false);
-        jPanelHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelarriba.setBackground(new java.awt.Color(77, 98, 201));
+        jPanelarriba.setForeground(new java.awt.Color(85, 128, 201));
+        jPanelarriba.setOpaque(false);
+        jPanelarriba.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanelBotones.setBackground(new java.awt.Color(0, 0, 0));
         jPanelBotones.setOpaque(false);
         jPanelBotones.setLayout(new javax.swing.BoxLayout(jPanelBotones, javax.swing.BoxLayout.LINE_AXIS));
-        jPanelHeader.add(jPanelBotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, 40));
+        jPanelarriba.add(jPanelBotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, 40));
 
         jPanelBuscar.setBackground(new java.awt.Color(0, 153, 51));
         jPanelBuscar.setOpaque(false);
@@ -152,7 +152,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
         });
         jPanelBuscar.add(jButtonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 110, 20));
 
-        jPanelHeader.add(jPanelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 340, 40));
+        jPanelarriba.add(jPanelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 340, 40));
 
         jButtonAnalizar.setText("Analizar");
         jButtonAnalizar.setPreferredSize(new java.awt.Dimension(72, 30));
@@ -161,7 +161,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 jButtonAnalizarActionPerformed(evt);
             }
         });
-        jPanelHeader.add(jButtonAnalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 100, -1));
+        jPanelarriba.add(jButtonAnalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 100, -1));
 
         jButtonAbrir.setText("Abrir");
         jButtonAbrir.setPreferredSize(new java.awt.Dimension(72, 30));
@@ -170,23 +170,23 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 jButtonAbrirActionPerformed(evt);
             }
         });
-        jPanelHeader.add(jButtonAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 80, -1));
+        jPanelarriba.add(jButtonAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 80, -1));
 
-        javax.swing.GroupLayout jPanelSuperiorLayout = new javax.swing.GroupLayout(jPanelSuperior);
-        jPanelSuperior.setLayout(jPanelSuperiorLayout);
-        jPanelSuperiorLayout.setHorizontalGroup(
-            jPanelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelSuperiorLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelALayout = new javax.swing.GroupLayout(jPanelA);
+        jPanelA.setLayout(jPanelALayout);
+        jPanelALayout.setHorizontalGroup(
+            jPanelALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelALayout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jPanelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelarriba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(27, Short.MAX_VALUE))
         );
-        jPanelSuperiorLayout.setVerticalGroup(
-            jPanelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelHeader, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanelALayout.setVerticalGroup(
+            jPanelALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelarriba, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanelGeneral.add(jPanelSuperior, java.awt.BorderLayout.PAGE_START);
+        jPanelfondo.add(jPanelA, java.awt.BorderLayout.PAGE_START);
 
         jPanel4.setOpaque(false);
 
@@ -201,18 +201,18 @@ public class inicioAnalizador extends javax.swing.JFrame {
             .addGap(0, 965, Short.MAX_VALUE)
         );
 
-        jPanelGeneral.add(jPanel4, java.awt.BorderLayout.LINE_END);
+        jPanelfondo.add(jPanel4, java.awt.BorderLayout.LINE_END);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelGeneral, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelfondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelfondo, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 1804, Short.MAX_VALUE))
         );
 
@@ -232,11 +232,11 @@ public class inicioAnalizador extends javax.swing.JFrame {
             pnlBusqueda.setVisible(true);
             
             busqueda.buscar(pnlBusqueda.getjTextAreaBusqueda(), jTextFieldBuscar.getText());
-            jPanelResultados.removeAll();
+            jPanelInfo.removeAll();
             
-            jPanelResultados.add(pnlBusqueda);
-            jPanelResultados.repaint();
-            jPanelResultados.revalidate();
+            jPanelInfo.add(pnlBusqueda);
+            jPanelInfo.repaint();
+            jPanelInfo.revalidate();
         }
     }//GEN-LAST:event_jButtonBuscarActionPerformed
 
@@ -267,29 +267,29 @@ public class inicioAnalizador extends javax.swing.JFrame {
    
     private void manejarPaneles() {
         
-        jPanelResultados.removeAll();
-        jPanelResultados.setOpaque(false);
+        jPanelInfo.removeAll();
+        jPanelInfo.setOpaque(false);
         
         if ("".equals(jTextAreaEdicion.getText())) {
             JLabel label = new JLabel("Ingrese un texto para analizar", SwingConstants.CENTER);
             label.setForeground(Color.WHITE);
             label.setFont(new Font("Consolas",0, 18));
-            jPanelResultados.add(label);
+            jPanelInfo.add(label);
             
         } else if (analizador.getListaErrores().isEmpty()) {
             tokensLexemas pnlToken = new tokensLexemas(analizador.getListaTokens());
             pnlToken.setVisible(true);
-            jPanelResultados.add(pnlToken);
+            jPanelInfo.add(pnlToken);
             
         } else {
             errores pnlError = new errores(analizador.getListaErrores());
             pnlError.setVisible(true);
-            jPanelResultados.add(pnlError);
+            jPanelInfo.add(pnlError);
             
         }
         
-        jPanelResultados.repaint();
-        jPanelResultados.revalidate();
+        jPanelInfo.repaint();
+        jPanelInfo.revalidate();
     }
     
     int tFilas = 0;
@@ -322,13 +322,13 @@ public class inicioAnalizador extends javax.swing.JFrame {
     private javax.swing.JButton jButtonBuscar;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanelA;
+    private javax.swing.JPanel jPanelB;
     private javax.swing.JPanel jPanelBotones;
     private javax.swing.JPanel jPanelBuscar;
-    private javax.swing.JPanel jPanelCentral;
-    private javax.swing.JPanel jPanelGeneral;
-    private javax.swing.JPanel jPanelHeader;
-    private javax.swing.JPanel jPanelResultados;
-    private javax.swing.JPanel jPanelSuperior;
+    private javax.swing.JPanel jPanelInfo;
+    private javax.swing.JPanel jPanelarriba;
+    private javax.swing.JPanel jPanelfondo;
     private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JTextArea jTextAreaEdicion;
     private javax.swing.JTextField jTextFieldBuscar;
