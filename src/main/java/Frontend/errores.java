@@ -88,7 +88,6 @@ public class errores extends javax.swing.JPanel {
 
         jLblTitulo.setFont(new java.awt.Font("Corbel Light", 1, 16)); // NOI18N
         jLblTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLblTitulo.setText("Salida de Resultados");
         jLblTitulo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -108,7 +107,7 @@ public class errores extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jLblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents

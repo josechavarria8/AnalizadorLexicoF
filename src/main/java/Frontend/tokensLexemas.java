@@ -35,7 +35,7 @@ public class tokensLexemas extends javax.swing.JPanel {
         this.listaLexemas = lexema.getListaLexemas();
         llenarTablaLexemas();
         
-        jTextAreaTransiciones.append(al.getTransiciones());
+      
     }
     
     public void llenarTablaTokens() {
@@ -79,9 +79,6 @@ public class tokensLexemas extends javax.swing.JPanel {
         jPanelLexema = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTableLexemas = new javax.swing.JTable();
-        jPanelTransiciones = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextAreaTransiciones = new javax.swing.JTextArea();
         jLblTitulo = new javax.swing.JLabel();
 
         setOpaque(false);
@@ -136,21 +133,8 @@ public class tokensLexemas extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Lexemas", jPanelLexema);
 
-        jPanelTransiciones.setLayout(new java.awt.GridLayout(1, 0));
-
-        jTextAreaTransiciones.setEditable(false);
-        jTextAreaTransiciones.setColumns(20);
-        jTextAreaTransiciones.setFont(new java.awt.Font("Consolas", 0, 11)); // NOI18N
-        jTextAreaTransiciones.setRows(5);
-        jScrollPane3.setViewportView(jTextAreaTransiciones);
-
-        jPanelTransiciones.add(jScrollPane3);
-
-        jTabbedPane1.addTab("Transiciones", jPanelTransiciones);
-
         jLblTitulo.setFont(new java.awt.Font("Corbel Light", 1, 16)); // NOI18N
         jLblTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLblTitulo.setText("Salida de Resultados");
         jLblTitulo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -180,13 +164,10 @@ public class tokensLexemas extends javax.swing.JPanel {
     private javax.swing.JLabel jLblTitulo;
     private javax.swing.JPanel jPanelLexema;
     private javax.swing.JPanel jPanelToken;
-    private javax.swing.JPanel jPanelTransiciones;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTableLexemas;
     private javax.swing.JTable jTableTokens;
-    private javax.swing.JTextArea jTextAreaTransiciones;
     // End of variables declaration//GEN-END:variables
 }

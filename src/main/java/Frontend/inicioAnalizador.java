@@ -54,6 +54,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
 
         jPanelGeneral = new javax.swing.JPanel();
         jPanelCentral = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
         jScrollPane = new javax.swing.JScrollPane();
         jTextAreaEdicion = new javax.swing.JTextArea();
         jPanelResultados = new javax.swing.JPanel();
@@ -63,22 +64,21 @@ public class inicioAnalizador extends javax.swing.JFrame {
         jPanelBuscar = new javax.swing.JPanel();
         jTextFieldBuscar = new javax.swing.JTextField();
         jButtonBuscar = new javax.swing.JButton();
-        jButtonLexemasTalvez = new javax.swing.JButton();
         jButtonAnalizar = new javax.swing.JButton();
-        jButtonGuardar = new javax.swing.JButton();
         jButtonAbrir = new javax.swing.JButton();
-        jButtonNuevo = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
 
-        jPanelGeneral.setBackground(new java.awt.Color(50, 50, 50));
+        jPanelGeneral.setBackground(new java.awt.Color(142, 201, 219));
         jPanelGeneral.setLayout(new java.awt.BorderLayout());
 
         jPanelCentral.setOpaque(false);
         jPanelCentral.setLayout(new java.awt.GridLayout(1, 0));
+
+        jPanel5.setForeground(new java.awt.Color(42, 56, 204));
+        jPanel5.setOpaque(false);
 
         jScrollPane.setBorder(null);
 
@@ -94,12 +94,34 @@ public class inicioAnalizador extends javax.swing.JFrame {
         });
         jScrollPane.setViewportView(jTextAreaEdicion);
 
-        jPanelCentral.add(jScrollPane);
-
         jPanelResultados.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jPanelResultados.setOpaque(false);
         jPanelResultados.setLayout(new java.awt.GridLayout(1, 0));
-        jPanelCentral.add(jPanelResultados);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(81, 81, 81)
+                .addComponent(jPanelResultados, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(jPanelResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(179, 179, 179))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(216, 216, 216))))
+        );
+
+        jPanelCentral.add(jPanel5);
 
         jPanelGeneral.add(jPanelCentral, java.awt.BorderLayout.CENTER);
 
@@ -120,7 +142,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
         jPanelBuscar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextFieldBuscar.setPreferredSize(new java.awt.Dimension(100, 20));
-        jPanelBuscar.add(jTextFieldBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 10, 200, 20));
+        jPanelBuscar.add(jTextFieldBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 200, 20));
 
         jButtonBuscar.setText("Buscar");
         jButtonBuscar.addActionListener(new java.awt.event.ActionListener() {
@@ -128,18 +150,9 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 jButtonBuscarActionPerformed(evt);
             }
         });
-        jPanelBuscar.add(jButtonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 110, 20));
+        jPanelBuscar.add(jButtonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 110, 20));
 
-        jPanelHeader.add(jPanelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 340, 40));
-
-        jButtonLexemasTalvez.setText("Lexem");
-        jButtonLexemasTalvez.setPreferredSize(new java.awt.Dimension(72, 30));
-        jButtonLexemasTalvez.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLexemasTalvezActionPerformed(evt);
-            }
-        });
-        jPanelHeader.add(jButtonLexemasTalvez, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, 90, -1));
+        jPanelHeader.add(jPanelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 340, 40));
 
         jButtonAnalizar.setText("Analizar");
         jButtonAnalizar.setPreferredSize(new java.awt.Dimension(72, 30));
@@ -148,16 +161,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 jButtonAnalizarActionPerformed(evt);
             }
         });
-        jPanelHeader.add(jButtonAnalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 100, -1));
-
-        jButtonGuardar.setText("Guardar");
-        jButtonGuardar.setPreferredSize(new java.awt.Dimension(72, 30));
-        jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonGuardarActionPerformed(evt);
-            }
-        });
-        jPanelHeader.add(jButtonGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 100, -1));
+        jPanelHeader.add(jButtonAnalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 100, -1));
 
         jButtonAbrir.setText("Abrir");
         jButtonAbrir.setPreferredSize(new java.awt.Dimension(72, 30));
@@ -166,16 +170,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
                 jButtonAbrirActionPerformed(evt);
             }
         });
-        jPanelHeader.add(jButtonAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 70, -1));
-
-        jButtonNuevo.setText("Nuevo");
-        jButtonNuevo.setPreferredSize(new java.awt.Dimension(72, 30));
-        jButtonNuevo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonNuevoActionPerformed(evt);
-            }
-        });
-        jPanelHeader.add(jButtonNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, -1));
+        jPanelHeader.add(jButtonAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 80, -1));
 
         javax.swing.GroupLayout jPanelSuperiorLayout = new javax.swing.GroupLayout(jPanelSuperior);
         jPanelSuperior.setLayout(jPanelSuperiorLayout);
@@ -184,7 +179,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
             .addGroup(jPanelSuperiorLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jPanelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanelSuperiorLayout.setVerticalGroup(
             jPanelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,22 +203,6 @@ public class inicioAnalizador extends javax.swing.JFrame {
 
         jPanelGeneral.add(jPanel4, java.awt.BorderLayout.LINE_END);
 
-        jPanel5.setForeground(new java.awt.Color(42, 56, 204));
-        jPanel5.setOpaque(false);
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 965, Short.MAX_VALUE)
-        );
-
-        jPanelGeneral.add(jPanel5, java.awt.BorderLayout.LINE_START);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -234,7 +213,7 @@ public class inicioAnalizador extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanelGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1759, Short.MAX_VALUE))
+                .addGap(0, 1804, Short.MAX_VALUE))
         );
 
         pack();
@@ -284,18 +263,6 @@ public class inicioAnalizador extends javax.swing.JFrame {
 //            System.out.println(exc);
 //        }
     }//GEN-LAST:event_jTextAreaEdicionCaretUpdate
-
-    private void jButtonNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNuevoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonNuevoActionPerformed
-
-    private void jButtonLexemasTalvezActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLexemasTalvezActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonLexemasTalvezActionPerformed
-
-    private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonGuardarActionPerformed
 
    
     private void manejarPaneles() {
@@ -353,9 +320,6 @@ public class inicioAnalizador extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAbrir;
     private javax.swing.JButton jButtonAnalizar;
     private javax.swing.JButton jButtonBuscar;
-    private javax.swing.JButton jButtonGuardar;
-    private javax.swing.JButton jButtonLexemasTalvez;
-    private javax.swing.JButton jButtonNuevo;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanelBotones;

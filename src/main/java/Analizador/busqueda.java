@@ -19,7 +19,7 @@ public class busqueda {
 
     public static void buscar(JTextArea jTextArea, String palabraBuscar) {
 
-        DefaultHighlighter.DefaultHighlightPainter resaltador = new DefaultHighlighter.DefaultHighlightPainter(new Color(255, 155, 0));
+        DefaultHighlighter.DefaultHighlightPainter resaltador = new DefaultHighlighter.DefaultHighlightPainter(new Color(242, 50, 240));
         Highlighter resaltado = jTextArea.getHighlighter();
         resaltado.removeAllHighlights();
 
@@ -28,7 +28,7 @@ public class busqueda {
 
         for (int i = 0; i < textoBusqueda.length()- palabraBuscar.length() + 1; i++) {
 
-            contador = 0;
+            contador = 0;  // de prueba
             indice = i;
             String cadena = "";
             int[] inicio = new int[palabraBuscar.length()];

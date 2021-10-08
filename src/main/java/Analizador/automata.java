@@ -13,17 +13,7 @@ public class automata {
         } else {
                             
             switch (estadoActual) {
-                /**
-                 * 
-                 * TABLA DE TRANSICIONES
-                 * S0 -> letra  -> S1       S0 -> '+' -> S6         S0 -> '(' -> S7         S1 -> letra  -> S1
-                 * S0 -> dígito -> S2       S0 -> '-' -> S6         S0 -> ')' -> S7         S1 -> dígito -> S1
-                 * S0 ->  '.'   -> S5       S0 -> '*' -> S6         S0 -> '[' -> S7         S2 -> dígito -> S2
-                 * S0 ->  ','   -> S5       S0 -> '/' -> S6         S0 -> ']' -> S7         S2 ->  '.'   -> S3
-                 * S0 ->  ';'   -> S5       S0 -> '%' -> S6         S0 -> '{' -> S7         S3 -> dígito -> S4
-                 * S0 ->  ':'   -> S5                               S0 -> '}' -> S7         S4 -> dígito -> S4
-                 * 
-                 */
+                
                 case 0:
                 
                     if (Character.isLetter(ch)) { // S0 -> letra  -> S1 
@@ -66,9 +56,7 @@ public class automata {
                         SiguienteEstado = 4;
                     }
                     break;
-                case (5 | 6 | 7):
-                    SiguienteEstado = 0;
-                    break;
+               
             }
 
         }
